@@ -6,13 +6,18 @@ A Model Context Protocol (MCP) server scaffold built with [mcp-go](https://githu
 
 ```
 .
-├── main.go                    # Entry point
+├── main.go                         # Entry point
 ├── internal/
 │   ├── server/
-│   │   └── server.go          # MCP server creation & transport setup
+│   │   └── server.go               # MCP server creation & transport setup
 │   └── tools/
-│       ├── register.go        # Central tool registration
-│       └── hello.go           # Example "hello" tool
+│       ├── filesystem.go           # Example filesystem info tool
+│       ├── hello.go                # Example "hello" tool
+│       ├── http.go                 # HTTP utility tool
+│       ├── initialize.go           # Initialization helper
+│       ├── register.go             # Central tool registration
+│       ├── shell.go                # Shell command tool
+│       └── sysinfo.go              # System info tool
 ├── go.mod
 └── go.sum
 ```
